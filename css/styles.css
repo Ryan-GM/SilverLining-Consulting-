@@ -97,7 +97,7 @@
 
 /*** Hero Header home, about, contact***/ 
 .hero-header {
-    background: linear-gradient(rgba(120, 61, 120, 0.9), rgba(195, 130, 195, 0.9)), url(../img/logos/Silverlining-Full_logo.png);
+    background: linear-gradient(rgba(120, 61, 120, 0.9), rgba(67, 2, 67, 0.9)), url(../img/logos/Silverlining-Full_logo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
