@@ -4,6 +4,7 @@
     --dark: #2f013d;
 }
 
+/* Footer Styles */
 .ff-secondary {
     font-family: 'Pacifico', cursive;
 }
@@ -93,11 +94,20 @@
 }
 
 
-/*** Hero Header ***/
+/*** Hero Header home, about, contact***/ 
 .hero-header {
-    background: linear-gradient(rgba(35, 59, 122, 0.9), rgba(15, 23, 43, .9)), url(../img/Silverlining-Full-logo.jpg);
+    background: linear-gradient(rgba(76, 48, 76, 0.9), rgba(77, 51, 77, 0.9)), url(../img/logos/Silverlining-Full_logo.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
+    background-size: contain;
+    height: 200px;
+}
+
+/* Hero Header MFP */
+.mfp{
+    background: linear-gradient(rgba(57, 57, 57, 0.9), rgba(87, 85, 57, 0.9)), url(../img/logos/MFP_Logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
 }
