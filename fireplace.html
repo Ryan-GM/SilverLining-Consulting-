@@ -23,7 +23,7 @@
     
     <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0" id="mega-menu-holder">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0" id="mega-menu">
                 <a href="" class="navbar-brand p-0">
                     
                     <img src="img/logos/MFP_Logo.png" alt="MFP_Logo">
@@ -40,10 +40,10 @@
             
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <button class="btn btn-lg btn-info text-nowrap" data-bs-toggle="modal" data-bs-target="#bookModal">Book A Session</button>
+                    <button id="bookSessionBtn" class="btn btn-lg text-nowrap" data-bs-toggle="modal" data-bs-target="#bookModal">Book A Session</button>
                 </div>
             </nav>
-            <div class="container-xxl py-5 bg-dark hero-header mfp mb-5">
+            <div class="container-xxl py-5 mfp mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
                     
                     <nav aria-label="breadcrumb">
@@ -232,7 +232,7 @@
        </div>
        <div class="row mb-3">
            <div class="offset-md-2 col-md-10">
-               <button type="submit" class="btn btn-success">Book Session</button>
+               <button type="submit" class="btn">Book Session</button>
            </div>
        </div>
             </form>
