@@ -10,6 +10,8 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Include Owl Carousel CSS and JS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 <body>
     <div class="container-xxl bg-white p-0">
@@ -43,7 +45,7 @@
                    
                 </div>
             </nav>
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+            <div class="container-xxl py-5 hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
                     <!-- <h1 class="display-3 text-white mb-3 animated slideInDown">Our Profile</h1> -->
                     <nav aria-label="breadcrumb">
@@ -74,52 +76,52 @@
                 <li><p>Experiential Marketing</p></li>
                 <li><p>Documentary Production</p></li>
             </ul>
-            <p class="mb-2">Our staff have more than <span class="flex-shrink-0 text-primary mb-0" data-toggle="counter-up"> 5</span>  years of experience in the Eastern Africa region
+            <p class="mb-2">Our staff have more than <span class="flex-shrink-0 text-primary mb-0" data-toggle="counter-up"> 15</span>  years of experience in the Eastern Africa region
                 serving institutions from different categories:- Parastatals, Corporates and NGOs.
                 We deliver WOW events every time, all the time, without fail.</p>
         
                 <h4 class="mt-3">Pictures of some of the Conferences/Workshops we have organized</h4>
-                <div class="col-md-9">
-                    <div class="row g-3">
-                        <div class="col-4 text-start wow fadeInUp">
-                            <div class="team-item text-center rounded overflow-hidden">
+                <div class="col-md-9" id="background">
+                    <div class="row g-3" id="cards">
+                        <div class="card col-4 text-start wow fadeInUp">
+                            <div class="card-content text-center rounded overflow-hidden">
                                 <div class="overflow-hidden m-4">
                             <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/IGAD-April-3-4,2021.jpg">
                         </div>
                             </div>
                         </div>
                         
-                        <div class="col-4 text-start wow fadeInUp">
-                            <div class="team-item text-center rounded overflow-hidden">
+                        <div class="card col-4 text-start wow fadeInUp">
+                            <div class="card-content  text-center rounded overflow-hidden">
                                 <div class="overflow-hidden m-4">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/jointIGAD-April-2021.jpg" style="margin-top: 25%;">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/jointIGAD-April-2021.jpg">
                             </div>
                             </div>
                         </div>
-                        <div class="col-4 text-end">
-                            <div class="team-item text-center rounded overflow-hidden">
+                        <div class="card col-4 text-end">
+                            <div class="card-content text-center rounded overflow-hidden">
                                 <div class="overflow-hidden m-4">
                             <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.5s" src="img/CAADP-climate-Oct-2011.jpg">
                         </div>
                             </div>
                         </div>
                         <div class="row g-3">
-                        <div class="col-4 text-end">
-                            <div class="team-item text-center rounded overflow-hidden">
+                        <div class="card col-4 text-end">
+                            <div class="card-content text-center rounded overflow-hidden">
                                 <div class="overflow-hidden m-4">
                             <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/USAID-feed-the-future.jpg">
                         </div>
                             </div>
                         </div>
-                        <div class="col-4 text-end">
-                            <div class="team-item text-center rounded overflow-hidden">
+                        <div class="card col-4 text-end">
+                            <div class="card-content text-center rounded overflow-hidden">
                                 <div class="overflow-hidden m-4">
                             <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/Non-stateActors(NSA).jpg">
                         </div>
                             </div>
                         </div>
-                        <div class="col-4 text-end">
-                            <div class="team-item text-center rounded overflow-hidden">
+                        <div class="card col-4 text-end">
+                            <div class="card-content text-center rounded overflow-hidden">
                                 <div class="overflow-hidden m-4">
                             <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/Non-stateActors(NSA)-Kigali,Rwanda.png">
                         </div>
@@ -127,15 +129,15 @@
                         </div>
                     </div>
                         <div class="row g-3">
-                        <div class="col-4 text-end">
-                            <div class="team-item text-center rounded overflow-hidden">
+                        <div class="card col-4 text-end">
+                            <div class="card-content text-center rounded overflow-hidden">
                                 <div class="overflow-hidden m-4">
                             <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/Uganda-members.jpg">
                         </div>
                             </div>
                         </div>
-                        <div class="col-4 text-end">
-                            <div class="team-item text-center rounded overflow-hidden">
+                        <div class="card col-4 text-end">
+                            <div class="card-content text-center rounded overflow-hidden">
                                 <div class="overflow-hidden m-4">
                             <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/Conference-material-Distro-EABL-sales.jpg">
                         </div>
@@ -286,45 +288,62 @@
                             </div>
                         </div>
         
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="text-center">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal mb-5">WHY US</h5>  
-                </div>
-                
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p><small>We offer a comprehensive range of event management services that are
-                            essential for the creation of successful events. From a small business meeting
-                            to a large scale company event, we save you time, effort and often costs,
-                            taking away many of the hassles and without charging you a fee to put forward
-                            our proposals.</small></p>
+                        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="container">
+                                <div class="text-center">
+                                    <h5 class="section-title ff-secondary text-center text-primary fw-normal mb-5">WHY US</h5>  
+                                </div>
+                                
+                                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    
+                                        <div class="row g-4">
+                                            <div class="col-md-3">
+                                                
+                                            <div class="testimonial-item bg-transparent border rounded p-4">
+                                                
+                                                <p><small>We offer a comprehensive range of event management services that are
+                                                    essential for the creation of successful events. From a small business meeting
+                                                    to a large scale company event, we save you time, effort and often costs,
+                                                    taking away many of the hassles and without charging you a fee to put forward
+                                                    our proposals.</small></p>
+                                            </div>
+                                        
+                                            </div>
+                                            <div class="col-md-3">
+                                                
+                                            <div class="testimonial-item bg-transparent border rounded p-4">
+                                                
+                                                <p><small>We specialize in bringing groups and companies to destinations of your choice
+                                                    in Eastern Africa and with our event managers' genuine local knowledge; we
+                                                    ensure you get the best service possible.</small></p>
+                                            </div>
+                                        
+                                            </div>
+                                            <div class="col-md-3">
+                                                
+                                            <div class="testimonial-item bg-transparent border rounded p-4">
+                                                
+                                                <p><small>We are able to call upon event services, suppliers and venues that we know
+                                                    are not only located in the best areas to suit your individual needs but are also
+                                                    professional and reliable.</small></p>
+                                            </div>
+                                        
+                                            </div>
+                                            <div class="col-md-3">
+                                                
+                                            <div class="testimonial-item bg-transparent border rounded p-4">
+                                                
+                                                <p><small>We don't take over your event; we just give you the local support to ensure
+                                                    things run smoothly and according to plan.</small></p>
+                                            </div>
+                                        
+                                            </div>
+                                        </div>
+                                           
+                                </div>
+                            </div>
+                        </div>
                         
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p><small>We specialize in bringing groups and companies to destinations of your choice
-                            in Eastern Africa and with our event managers' genuine local knowledge; we
-                            ensure you get the best service possible.</small></p>
-                        
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p><small>We are able to call upon event services, suppliers and venues that we know
-                            are not only located in the best areas to suit your individual needs but are also
-                            professional and reliable.</small></p>
-                        
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p><small>We don't take over your event; we just give you the local support to ensure
-                            things run smoothly and according to plan.</small></p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
         
 
         <!-- Footer Start -->
@@ -363,7 +382,10 @@
     </div>
 </div>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    
 </body>
 </html>
