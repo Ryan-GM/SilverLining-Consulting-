@@ -1,0 +1,8 @@
+:root {
+    --primary: #71058b;
+    --light: #ffffff;
+    --dark: #2f013d;
+    --card-color: rgb(25, 25, 25);
+    --contentHeight: 30vh;
+    --sectionWidth: 700px;
+}
