@@ -28,6 +28,46 @@
     z-index: 99;
 }
 
+/* Custom CSS for styling */
+
+/* Style for the right-wing container */
+.right-wing {
+    background-color: #2c3450; /* Dark blue background */
+  }
+  
+  /* Style for the company profile description text */
+  #company-profile-descript p {
+    font-size: 18px; /* Increase font size */
+  }
+  
+  /* Style for the section header */
+  .section-header h3 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    color: #19232b; /* Blue color */
+  }
+  
+  /* Keyframes for the zoom in animation */
+@keyframes zoomIn {
+    from {
+      transform: scale(0); /* Start from scale 0 */
+    }
+    to {
+      transform: scale(1); /* End at normal scale (1) */
+    }
+  }
+  
+  /* Style for the image */
+  .col-md-5 img {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Add shadow */
+    animation: zoomIn 0.5s ease-in-out; /* Apply zoom in animation */
+  }
+
+  /* Apply zoom in animation on hover */
+.col-md-5 img:hover {
+    transform: scale(1.1); /* Apply scale transformation on hover */
+    animation: zoomIn 0.5s ease-in-out; /* Apply zoom in animation */
+  }
+
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
     position: relative;

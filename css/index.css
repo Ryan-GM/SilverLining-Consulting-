@@ -99,7 +99,7 @@ section {
     margin: 40px auto;
     width: 97%;
     color: #fff;
-    background-color: #000;
+    background-color: #50044f;
   }
   
   summary {
@@ -135,7 +135,7 @@ section {
   }
   
   details[open] > summary {
-     color: red;
+     color: rgb(217, 46, 174);
   }
   
   @media (min-width: 768px) {
@@ -202,3 +202,11 @@ section {
     }
   }
   
+  #company-profile .left-wing li a {
+    display: block;
+    color: #4b4949;
+    font-weight: bold;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(61, 61, 194);
+    padding-left: 5px;
+ }
