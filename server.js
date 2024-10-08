@@ -26,6 +26,10 @@ app.post('/send-email', (req, res) => {
             user: process.env.EMAIL_USER, // Your email
             pass: process.env.EMAIL_PASS, // Your email password (or app-specific password)
         },
+        secure: true,
+        tls:{
+            rejectUnauthorized: false
+        }
     });
 
     // Create email options
@@ -40,7 +44,7 @@ app.post('/send-email', (req, res) => {
         Contact Number: (${areaCode}) ${telNum}
         Email: ${email}
         Preferred Contact Method: ${contactRadios}
-        Feedback: ${feedback}
+        About Me: ${feedback}
         `,
     };
 
