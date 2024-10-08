@@ -7,7 +7,7 @@
   --sectionWidth: 700px;
 }
 .hero-header {
-  background: linear-gradient(rgba(76, 54, 76, 0.7), rgba(61, 46, 61, 0.87)), url(../img/logos/Silverlining-Full_logo.png);
+  background: linear-gradient(rgba(39, 28, 39, 0.897), rgba(115, 36, 115, 0.3)), url(../img/logos/Silverlining-Full_logo.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
