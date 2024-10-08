@@ -11,6 +11,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="img/logos/mfp-favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="container-xxl bg-white p-0">
@@ -217,7 +218,7 @@
                     </div>
                     <div class="modal-body bg-dark ">
                        <div class=" mt-5">
-            <form autocomplete="on" id="session_form" method="post" action="http://localhost:3000/send-email" class="session_form mr-3">
+            <form autocomplete="on" id="session_form" method="post" class="session_form mr-3">
                 <div class="row mb-3">
                     <label for="firstName" class="col-md-2 col-form-control">First Name</label>
                     <div class="col-md-10">
@@ -265,7 +266,7 @@
        </div>
        <div class="row mb-3">
            <div class="offset-md-2 col-md-10">
-               <button type="submit" class="btn">Book Session</button>
+               <button id="bookSessionBtn" type="submit" class="btn">Book Session</button>
            </div>
        </div>
             </form>
