@@ -8,7 +8,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
@@ -23,6 +23,30 @@
     
     <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
+          <!-- Contact Section -->
+              <header class="contact-header">
+                <div class="container-fluid d-flex justify-content-between align-items-center py-2">
+                    <div class="contact-info d-flex">
+                        <span><i class="fa fa-phone"></i> Tel: +254726784506</span>
+                        <span><i class="fa fa-envelope"></i> silverliningconsult@gmail.com</span>
+                        <span><i class="fa fa-map-marker"></i> P.O. BOX 2365 - 00900, KIAMBU</span>
+                    </div>
+                    <div class="social-media">
+                        <span>Follow Us :</span>
+                        <a href="#" target="_blank" title="Facebook" class="socials-item">
+                          <i class="fab fa-facebook-f facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fearlesslivingtransitioncoach/" target="_blank" title="Linkedin" class="socials-item">
+                          <i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" title="Twitter" class="socials-item">
+                          <i class="fab fa-twitter twitter"></i>
+      
+                        </a>
+                    </div>
+                </div>
+              </header>
+
+              <!-- Navbar Section -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0" id="mega-menu-holder">
                 <a href="" class="navbar-brand p-0">
                     
@@ -34,7 +58,15 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="#" class="nav-item nav-link active">About</a>
+                       <!-- Updated About section with dropdown -->
+                        <div class="nav-item dropdown">
+                          <a href="about.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Work with us</a>
+                          <div class="dropdown-menu">
+                              <a href="#partner-header" class="dropdown-item">Your Partner in Exceptional Projects and Event Management!</a>
+                              <a href="#meeting-header" class="dropdown-item">Meeting &amp; Workshop Facilitation Services</a>
+                              
+                          </div>
+                      </div>
                         <a href="fireplace.html" class="nav-link">Mercy’s fireplace</a>
                         
             
@@ -62,7 +94,7 @@
         <!--About sections-->
         <div class="container-xxl py-3" >
         <section id="management" class=" m-4 fadeInUp">
-            <div class="section-header text-center pb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="section-header text-center pb-5 wow fadeIn" id="partner-header" data-wow-delay="0.1s">
             <h3 class="bg-white px-2 fw-semi-bold text-uppercase text-dark">Your Partner in Exceptional Projects and Event Management!</h3>
              </div>
               <p class="justify-content-center"> At SLC, we specialize in creating unforgettable events and managing seamless projects that exceed expectations. With our expert team and innovative approach, we turn your visions into reality, ensuring every detail is executed flawlessly.
@@ -111,7 +143,7 @@
 
             <div class="container-xxl py-3">
                 <section id="facilitation" class=" m-4 fadeInUp">
-                    <div class="section-header text-center pb-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="section-header text-center pb-5 wow fadeIn" id="meeting-header" data-wow-delay="0.1s">
                     <h3 class="bg-white px-2 fw-semi-bold text-uppercase text-dark">Meeting & Workshop Facilitation Services!</h3>
                      </div>
                       <p class="justify-content-center">Unlock the full potential of your meetings and workshops with expert facilitation from our in-house skilled facilitators. As seasoned facilitators with a passion for fostering collaboration and driving results, we specialize in creating engaging and productive environments where ideas thrive, and goals are achieved.</p>
@@ -169,77 +201,51 @@
                   
                     </section>
 
+                    <!-- Testimonial Section Start -->
+<!-- <section id="testimonials" class="py-5">
+  <div class="container">
+      <h2 class="text-center mb-4">What Our Clients Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="testimonial-item text-center">
+                      <p class="testimonial-text">"I have been fortunate throughout the years since I worked with a stellar leader and manager as yourself, and I have grown and learned in various capacities under your tutelage. The mentorship and leadership you exude is immense.</p>
+                      <p> I must admit that you are a true leader and manager who always took a firm stance, never leaving anything to chance. You have always delivered what you promise to the team and ensured that the team was in high spirit for any task ahead. You inspired us to take initiative, reminding us never to do anything manipulative’</p>
+                      <h5 class="testimonial-author">- Abdul Agukoh, Program Manager at Christian Aid</h5>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="testimonial-item text-center">
+                      <p class="testimonial-text">"We had an amazing experience working with SilverLining. Their expertise made our event a huge success!"</p>
+                      <h5 class="testimonial-author">- John Smith, Event Manager</h5>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="testimonial-item text-center">
+                      <p class="testimonial-text">"The project management services provided by SilverLining were top-notch. They helped us stay on track and within budget."</p>
+                      <h5 class="testimonial-author">- Sarah Brown, Project Director</h5>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+</section> -->
+<!-- Testimonial Section End -->
+
         <!-- Footer Start -->
         <div>
  
             <footer>
               <div class="footer-top">
-                <div class="pt-exebar">
-        
-                </div>
-                <div class="container">
-                  <div class="row">
-                    
-                    <div class="col-12 col-lg-6 col-md-6 col-sm-12">
-                        <div class="row g-5">
-                            
-                            <div class="col-lg-3 col-md-6">
-                                <h4 class="section-title ff-secondary text-start fw-normal mb-4">Lets Connect</h4>
-                                
-                                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254726784506/+25433235820</p>
-                                <p class="mb-2"><i class="fa fa-envelope me-3"></i>silverliningconsult@gmail.com</p>
-                                
-                            </div>
-                            
-                            
-                        </div>
-                </div>
-              </div>
-              <div class="footer-bottom">
-                <div class="container">
-                  <div class="row">
-        
-                    <div class="col-md-3">
-                      <div class="footer-site-info">2024 © </div>
-                    </div>
-        
-                    <div class="col-md-6">
-                      <nav id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
-                        <ul id="footer-menu" class="nav-menu styled clearfix inline-inside">
-                          
-                          <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#">Terms & Condition</a></li>
-                          <li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="#">Disclaimer</a></li>
-                          
-                        </ul>
-                      </nav>
-                    </div>
-        
-                    <div class="col-md-3">
-                      <div id="footer-socials">
-                        <div class="socials inline-inside socials-colored">
-        
-                          <a href="#" target="_blank" title="Facebook" class="socials-item">
-                            <i class="fab fa-facebook-f facebook"></i>
-                          </a>
-                          <a href="#" target="_blank" title="Twitter" class="socials-item">
-                            <i class="fab fa-twitter twitter"></i>
-        
-                          </a>
-                          <a href="#" target="_blank" title="Instagram" class="socials-item">
-                            <i class="fab fa-instagram instagram"></i>
-                          </a>
-                          <a href="#" target="_blank" title="YouTube" class="socials-item">
-                            <i class="fab fa-youtube youtube"></i>
-                          </a>
-                          <a href="#" target="_blank" title="Telegram" class="socials-item">
-                            <i class="fab fa-telegram telegram"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-        
-                  </div>
-                </div>
+                
               </div>
             </footer>
           </div>
