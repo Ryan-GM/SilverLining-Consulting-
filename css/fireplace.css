@@ -78,6 +78,56 @@
     
 }
 
+.contact-header {
+  background-color: #827302; ; /* Purple background */
+  color: white;
+  font-size: 14px;
+}
+
+.contact-header .contact-info span {
+  margin-right: 15px;
+  display: flex;
+align-items: center;
+    
+}
+
+.contact-header .contact-info i {
+  margin-right: 5px;
+}
+
+.contact-header .social-media a {
+  margin-left: 10px;
+  color: white;
+}
+
+.contact-header .social-media a i {
+  font-size: 18px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .contact-header .container-fluid {
+        flex-direction: column; /* Stacks the content vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .contact-header .contact-info, .contact-header .social-media {
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-header .social-media {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-header .socials-item {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
 /* Hero Header MFP */
 .mfp{
     background: linear-gradient(rgba(73, 77, 1, 0.7), rgba(135, 116, 7, 0.5)), url(../img/logos/MFP_Logo.png);
@@ -85,6 +135,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
+}
+
+.btn{
+  background-color: #827302; 
+  transition: background-color 0.3s ease;
 }
 
 #bookSessionBtn{
@@ -283,88 +338,63 @@ body{
   align-items: center;
 } */
 
-.tab-wrap {
-  transition: 0.3s box-shadow ease;
-  border-radius: var(--tab-wrap-border-radius);
-  max-width: 100%;
+/* Accordion Index Page */
+/* Styles for tab container */
+.tab-container {
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  list-style: none;
-  background-color: #fff;
-  margin: 40px 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  &:hover {
-    box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
-  }
+  flex-direction: row;
+  background-color: rgba(155, 134, 40, 0.9);
+  color: #fff;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.tab {
-  display: none;
-  @for $i from 1 through $max-tab-count {
-    &:checked:nth-of-type(#{$i}) ~ .tab__content:nth-of-type(#{$i}) {
-      opacity: 1;
-      transition: 0.5s opacity ease-in, 0.8s transform ease;
-      position: relative;
-      top: 0;
-      z-index: 100;
-      transform: translateY(0px);
-      text-shadow: 0 0 0;
-    }
-  }
-  &:first-of-type:not(:last-of-type) + label {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  &:not(:first-of-type):not(:last-of-type) + label {
-    border-radius: 0;
-  }
-  &:last-of-type:not(:first-of-type) + label {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  &:checked + label {
-    background-color: #fff;
-    box-shadow: 0 -1px 0 #fff inset;
-    cursor: default;
-    &:hover {
-      box-shadow: 0 -1px 0 #fff inset;
-      background-color: #fff;
-    }
-  }
-  + label {
-    box-shadow: 0 -1px 0 #eee inset;
-    border-radius: var(--tab-wrap-border-radius) 0 0;
-    cursor: pointer;
-    display: block;
-    text-decoration: none;
-    color: #333;
-    flex-grow: 3;
-    text-align: center;
-    background-color: #f2f2f2;
-    user-select: none;
-    text-align: center;
-    transition: 0.3s background-color ease, 0.3s box-shadow ease;
-    height: 50px;
-    box-sizing: border-box;
-    padding: 15px;
-    &:hover {
-      background-color: #f9f9f9;
-      box-shadow: 0 1px 0 #f4f4f4 inset;
-    }
-  }
-  &__content {
-    padding: 10px 25px;
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    opacity: 0;
-    left: 0;
-    transform: translateY(-3px);
-    border-radius: var(--tab-wrap-border-radius);
-  }
+/* Tab buttons */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 200px;
 }
+
+.tab-button {
+  background-color: rgba(112, 92, 3, 0.9);
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+  background-color: rgba(112, 92, 3, 0.9);
+}
+
+.tab-button.active {
+  background-color: rgba(193, 182, 134, 0.9);
+}
+
+/* Tab content */
+.tab-content {
+  flex: 2;
+  padding: 20px;
+ 
+  background-color: rgba(112, 92, 3, 0.9);
+  border-left: 2px solid #fff;
+}
+
+/* Styling for paragraphs */
+.tab-content p {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
 
 
 /* boring stuff */
@@ -406,4 +436,22 @@ h3 {
 p {
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+.testimonial-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  margin-top: 15px;
 }

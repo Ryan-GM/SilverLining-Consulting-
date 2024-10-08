@@ -28,3 +28,56 @@
     transform: scale(1.1); /* Apply scale transformation on hover */
     animation: zoomIn 0.5s ease-in-out; /* Apply zoom in animation */
   }
+
+  .navbar-nav .dropdown-menu {
+    background-color: #1c164a; /* Dark background */
+    padding: 0.75rem 1rem;
+}
+
+.navbar-nav .dropdown-menu a.dropdown-item {
+    color: #ffffff; /* White text */
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.navbar-nav .dropdown-menu a.dropdown-item:hover {
+    background-color: #4a116b; /* Purple hover background */
+}
+
+.navbar-nav .dropdown-toggle::after {
+    content: " ▼"; /* Add dropdown arrow */
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    border: none; /* Remove border */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Add shadow */
+}
+
+.contact-header {
+  background-color: #660066; /* Purple background */
+  color: white;
+  font-size: 14px;
+}
+
+.contact-header .contact-info span {
+  margin-right: 15px;
+}
+
+.contact-header .contact-info i {
+  margin-right: 5px;
+}
+
+.contact-header .social-media a {
+  margin-left: 10px;
+  color: white;
+}
+
+.contact-header .social-media a i {
+  font-size: 18px;
+}
+
